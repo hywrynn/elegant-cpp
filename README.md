@@ -1,9 +1,7 @@
 ## C++大气编程
 
-数据一定放在private里。
-
-
-
+数据一定放在private里。  
+  
 构造函数初始列initialization list
 
 使用第二列的方式初始化，能用就用。
