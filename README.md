@@ -44,3 +44,25 @@ double real () const { return re; }
 尽量都使用pass/return by reference (to const)。
 
 注意：返回新创建的local variable的时候不能返回reference，必须返回value。
+
+
+
+class with pointer members
+
+必须有copy constructor, copy assignment operator, and destructor。
+
+
+
+copy assignment operator
+
+首先检测自我赋值（self assgnment）
+
+```cpp
+if (this == &str) {
+    return *this;
+}
+```
+
+
+
+array new一定要搭配array delete `delete[] p`。
